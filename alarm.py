@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from playsound import playsound
-
+# for mp3  #  from playsound import sound
 
 def alarm(time):
     # print("alarm is going to ring")
@@ -12,6 +12,8 @@ def alarm(time):
         print(currentTime)
         if str(currentTime) == str(alarmTime):
             playsound("C:\\Users\\Lenovo\\Downloads\\alarm.wav")
+            
+            #sound.playsound("file.mp3")
         elif str(currentTime) > str(alarmTime):
             break
 
